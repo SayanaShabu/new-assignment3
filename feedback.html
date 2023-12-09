@@ -1,0 +1,46 @@
+<HTML>
+    <HEAD>
+      <TITLE>Feedback Form</TITLE>
+      <style>
+        body{
+            background-image: url('https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/5885875/1820/1061/m1/fpnw/wm1/rcfgoijziiqaxwnp05dnpgiesnbsghxkmt3xs4r2gfqpk3imvowfpbpwf3nfgwnh-.jpg?1550127833&s=af733c2fcac2bb2be7f67a38a5e29fe4');
+           background-size: cover;
+         
+
+        }
+       .fo{
+       font-size: 25px;
+       color: rgb(186, 65, 13);
+       }
+      </style>
+    </HEAD>
+    <BODY><CENTER><br><br>
+        <BR>
+            <H1 style="font-size: 44;font-family: Harlow Solid Italic;"><u>Feedback Form</u></H1>
+            <div class="fo"><br>
+      <FORM action="mailto:simon.long@cit.ie" method="post" enctype="text/plain">
+        First Name : <INPUT type="text" name="firstname" placeholder="Enter name here">
+        Second Name : <INPUT type="text" name="secondname"  placeholder="Enter surname here">
+        <BR>
+        <BR><br>
+        <!--It's important that both of these radio button have the same name so they behave as one component (i.e. Only one can be selected at a time)-->  
+        <INPUT type="radio" name="gender" value="male">Male
+        <INPUT type="radio" name="gender" value="female">Female  
+        <BR>
+        <BR>
+            <BR>
+        <!--This uses the new HTML "email" INPUT type which will automatically validates the email address when the SUBMIT button is clicked-->
+        email: <INPUT type="email" name="mail" placeholder="e-mail address">
+        <BR>
+        <BR>
+            <BR>
+          Comment :<BR>        
+          <TEXTAREA rows="6" cols="50" name="commentfield"></TEXTAREA>
+          <BR>
+          <br>
+          <INPUT style="font-size: large;" TYPE="submit" value="Send Feedback">
+          <INPUT TYPE="reset" value="Reset"  style="font-size: large;" >
+      </FORM></div>
+    </CENTER>  <a href="index.html" style="float: right;">Go to home page</a>
+    </BODY>  
+  </HTML>

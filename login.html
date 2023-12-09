@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="style.css"></head>
+<script> 
+function validateEmail(emailId)
+{
+var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+if(emailId.value.match(mailformat))
+{
+document.form1.text1.focus();
+return true;
+}
+else
+{
+alert("Invalid email address.");
+document.form1.text1.focus();
+return false;
+}
+}   
+
+
+</script> 
+<style>
+    .bo{
+       
+        margin-left: 450px;
+        margin-right: 450px;
+        margin-top: 250px;
+
+    }
+</style>
+</head>
+<body style="background-image: url('https://i.pinimg.com/originals/cc/d0/f9/ccd0f95a0919720837dbe095cd244c52.jpg') ;
+background-size: cover;
+ color: rgb(0, 0, 0);
+ 
+ ">
+<div><div class="bo">
+    <h1 style="font-family: chiller;"><center>Login Here</center></h1>
+    <center>
+        
+<form name="form1" action="#"> 
+Email: <input type='text' name='email' value="email"/></br></br>
+<div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Password:</label>
+    <input type="password" id="password" placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and Maximum 8 characters" required>
+    <p id="message">password is <span id="strenght"></span></p>
+  </div>
+ <br><br>
+<input type="submit" id="submit" value="Submit" onclick="validateEmail(document.form1.email)"/>
+<br><br>
+</form></div>
+</div></center>  <a href="index.html" style="float: right;font-size: large;">Go to home page</a>
+<script src="new.js"></script>
+</body>
+</html>
